@@ -6,99 +6,132 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="normalize.css"> 
-    <link rel="stylesheet" href="public/css/style.css">
-    <!--<link rel="stylesheet" media="screen and (max-width: 768px)" href="768-styles.css" />
-    <link rel="stylesheet" media="screen and (max-width: 992px)" href="992-styles.css" />-->
+    <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+    </style> 
 </head>
 <body>
 <div class="conteneur">
-    <header class="flex">
-        <div><i class="fa-solid fa-arrow-left"></i></div>
-        <div><img src="images/logo/ohmyfood.png" alt="logo Ohmyfood"> </div>
-        <div><i class="fa-solid fa-arrow-right"></i></div>
+    <header class="flex head_accueil">
+        <div class="nav_left"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="logo"><img src="images/logo/ohmyfood.png" alt="logo Ohmyfood"> </div>
+        <div class="nav_right"><i class="fa-solid fa-arrow-right"></i></div>
     </header>
     <main>
         <div class="localize">
             <form>
-                <div class="picto-position"><i class="fa-solid fa-location-dot"></i></div>
-                <input type="search" value="Paris, Belleville" class="saisie-recherche"/>
+                <div class="picto_position"><i class="fa-solid fa-location-dot"></i></div>
+                <input type="search" value="Paris, Belleville" class="saisie_recherche"/>
             </form>
         </div>
         <section class="reservez">
-            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exceptions, sélectionnés par nos soins. </p>
-            <div class="btn-explorer">Explorez nos restaurants</div>
+            <div class="btn_supo"><a href="#">Explorez nos restaurants</a></div>
         </section>
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div class="item-fonctionnement">
+            
+            <div class="item_fonctionnement">
                 <div class="chiffre"><p>1</p></div>
-                <div class="text-fonctionnmt"><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></div>
+                <div class="text_fonctionnmt">
+                    <p class="picto_fonct"><i class="fa-solid fa-mobile-screen-button"></i></p>
+                    <a href="#"><p>Choisissez un restaurant</p></a>
+                </div>
             </div>
-            <div class="item-fonctionnement">
+            <div class="item_fonctionnement">
                 <div class="chiffre"><p>2</p></div>
-                <div class="text-fonctionnmt"><i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p></div>
+                <div class="text_fonctionnmt">
+                    <p class="picto_fonct"><i class="fa-solid fa-list-ul"></i></p>
+                    <a href="#"><p>Composez votre menu</p></a>
+                </div>
             </div>
-            <div class="item-fonctionnement">
+            <div class="item_fonctionnement">
                 <div class="chiffre"><p>3</p></div>
-                <div class="text-fonctionnmt"><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
+                <div class="text_fonctionnmt">
+                    <p class="picto_fonct"><i class="fa-solid fa-store"></i></p>
+                    <a href="#"><p>Dégustez au restaurant</p></a>
+                </div>
             </div>
         </section>
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="card_resto">
-                <div class="ribbon-resto">Nouveau</div>
-                <div class="image-resto"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-500.jpg" alt="A la palette du goût"></div>
-                <div class="text-resto">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
+                
+                <div class="image_resto">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash-500.jpg" alt="A la palette du goût">
+                    <div class="ribbon_resto">Nouveau</div>
                 </div>
-                <div class="btn-like">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="card_resto">
-                <div class="ribbon-resto">Nouveau</div>
-                <div class="image-resto"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash-500.jpg" alt="La note enchantée"></div>
-                <div class="text-resto">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </div>
-                <div class="btn-like">
-                    <i class="fa-solid fa-heart"></i>
+                <div class="argu_resto">
+                    <div class="text_resto">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="btn_like">
+                        <a href="#"><p><i class="fa-solid fa-heart"></i></p></a>
+                    </div>
                 </div>
             </div>
             <div class="card_resto">
-                <div class="ribbon-resto">Nouveau</div>
-                <div class="image-resto"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-500.jpg" alt="A la française"></div>
-                <div class="text-resto">
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>
+                
+                <div class="image_resto">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash-500.jpg" alt="La note enchantée">
+                    <div class="ribbon_resto">Nouveau</div>
                 </div>
-                <div class="btn-like">
-                    <i class="fa-solid fa-heart"></i>
+                <div class="argu_resto">
+                    <div class="text_resto">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <div class="btn_like">
+                        <a href="#"><p><i class="fa-solid fa-heart"></i></p></a>
+                    </div>
                 </div>
             </div>
             <div class="card_resto">
-                <div class="ribbon-resto">Nouveau</div>
-                <div class="image-resto"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-500.jpg" alt="Le délice des sens"></div>
-                <div class="text-resto">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                
+                <div class="image_resto">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-500.jpg" alt="A la française">
+                    <!--<div class="ribbon_resto">Nouveau</div>-->
                 </div>
-                <div class="btn-like">
-                    <i class="fa-solid fa-heart"></i>
+                <div class="argu_resto">
+                    <div class="text_resto">
+                        <h3>A la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="btn_like">
+                        <a href="#"><p><i class="fa-solid fa-heart"></i></p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_resto">
+                
+                <div class="image_resto">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-500.jpg" alt="Le délice des sens">
+                    <!--<div class="ribbon_resto">Nouveau</div>-->
+                </div>
+                <div class="argu_resto">
+                    <div class="text_resto">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="btn_like">
+                        <a href="#"><p><i class="fa-solid fa-heart"></i></p></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div><img src="images/logo/ohmyfood-150.png" alt="logo Ohmyfood"> </div>
-        <ul class="menu-footer">
-            <li><a href="#"><i class="fa-solid fa-utensils"></i><p>Proposer un restaurant</p></a></li>
-            <li><a href="#"><p>Devenir partenaire</p></a></li>
+        <div class="logo_footer"><img src="images/logo/ohmyfood-150.png" alt="logo Ohmyfood"> </div>
+        <ul class="menu_footer">
+            <li><p class="picto_menu_footer"><i class="fa-solid fa-utensils"></i></p><a href="#"><p>Proposer un restaurant</p></a></li>
+            <li><p class="picto_menu_footer"><i class="fa-solid fa-handshake-angle"></i><a href="#"><p>Devenir partenaire</p></a></li>
             <li><a href="#"><p>Mentions légales</p></a></li>
             <li><a href="#"><p>Contact</p></a></li>
         </ul>

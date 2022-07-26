@@ -1,0 +1,23 @@
+header {
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px #bbbaba;
+    div {
+        padding-top: 20px;
+    }
+    .logo {
+        width:164px;
+        height:28px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .nav_left {
+        margin-left: 20px;
+    }
+    .nav_right {
+        margin-right: 20px;
+    }
+}

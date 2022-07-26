@@ -1,0 +1,239 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn_supo {
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 224px;
+  margin: auto;
+  text-align: center;
+  padding: 17px 0px 17px 0px;
+  border-radius: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-shadow: 0px 3px 5px #8f8f8f;
+}
+.btn_supo a {
+  color: #fff;
+}
+
+.btn_like {
+  padding: 16px 20px 0px 0px;
+}
+.btn_like p {
+  font-size: 24px;
+  text-shadow: 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+  color: #fff;
+}
+header {
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px #bbbaba;
+}
+header div {
+  padding-top: 20px;
+}
+header .logo {
+  width: 164px;
+  height: 28px;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .nav_left {
+  margin-left: 20px;
+}
+header .nav_right {
+  margin-right: 20px;
+}
+
+.localize {
+  height: 46px;
+  background-color: #eaeaea;
+}
+.localize form {
+  width: 150px;
+  margin: auto;
+  padding-top: 16px;
+  display: flex;
+}
+.localize form .picto_position {
+  width: 20px;
+}
+.localize form input {
+  width: 130px;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.reservez {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.reservez h2 {
+  text-align: center;
+  font-weight: bold;
+  width: 240px;
+  padding-top: 20px;
+  margin: auto;
+}
+.reservez p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.fonctionnement {
+  padding: 30px 20px;
+}
+.fonctionnement .item_fonctionnement {
+  background-color: #f6f6f6;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  padding: 10px 10px;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #bbbaba;
+}
+.fonctionnement .item_fonctionnement .chiffre {
+  width: 22px;
+  height: 22px;
+  background-color: #9356DC;
+  border-radius: 12px;
+  position: relative;
+  top: 13px;
+  left: -20px;
+}
+.fonctionnement .item_fonctionnement .chiffre p {
+  margin: 0px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+}
+.fonctionnement .item_fonctionnement .text_fonctionnmt {
+  display: flex;
+}
+.fonctionnement .item_fonctionnement .text_fonctionnmt a {
+  color: #000;
+  font-weight: bold;
+}
+.fonctionnement .item_fonctionnement .text_fonctionnmt i {
+  color: #7e7e7e;
+}
+.fonctionnement .item_fonctionnement .text_fonctionnmt .picto_fonct {
+  margin-right: 20px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 30px 20px;
+}
+.restaurants .ribbon_resto {
+  float: right;
+  position: relative;
+  width: 80px;
+  padding-top: 3px;
+  text-align: center;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+  top: -140px;
+  right: 10px;
+  margin-bottom: -20px;
+}
+.restaurants .card_resto {
+  height: 224px;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px #bbbaba;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.restaurants .card_resto .image_resto {
+  height: 148px;
+}
+.restaurants .card_resto .image_resto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants .card_resto .argu_resto {
+  /*background-color: #008766;*/
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+.restaurants .card_resto .text_resto {
+  padding-left: 14px;
+}
+.restaurants .card_resto h3 {
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 3px;
+}
+.restaurants .card_resto p {
+  margin-top: 0px;
+}
+
+footer {
+  background-color: #282828;
+  padding: 20px;
+}
+footer .logo_footer {
+  width: 100px;
+  overflow: hidden;
+}
+footer .logo_footer img {
+  filter: invert(10);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer ul {
+  list-style-position: inside;
+  padding-left: 0px;
+}
+footer ul li {
+  list-style-type: none;
+  display: flex;
+}
+footer ul li .picto_menu_footer {
+  color: #fff;
+  margin-right: 10px;
+}
+footer ul li p {
+  margin-bottom: 0px;
+}
+footer ul li a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
