@@ -1,0 +1,50 @@
+.visuel_tete {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    height: 210px;
+    margin-bottom: -25px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.carte_resto {
+    position: relative;
+    z-index: 10;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: $gris-fond2;
+}
+.enseigne_resto {
+    display: flex;
+    justify-content: space-between;
+    .btn_like {
+        padding: 0px;
+    }
+    p {
+        padding: 0px;
+    }
+}
+.plat {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    h4 {
+        margin: 5px 0px;
+    }
+    p {
+        margin: 0px; 
+        /*&--modifier {
+            padding-top: 100px;
+        }*/
+    }
+}
+.prix-plat {
+    padding-top: 28px;
+    font-weight: bold;
+}
