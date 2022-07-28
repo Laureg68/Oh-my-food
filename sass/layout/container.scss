@@ -6,7 +6,7 @@
         margin: auto;
         padding-top: 16px;
         display: flex;
-        .picto_position {
+        .picto-position {
             width: 20px;
         }
         input {
@@ -18,117 +18,68 @@
     }
 }
 .reservez {
-    background-color: $gris-fond2;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    h2 {
+    
+    .reservez-titre {
         text-align: center;
         font-weight: bold;
         width: 240px;
         padding-top: 20px;
         margin: auto;
     }
-    p {
+    .reservez-argu {
         text-align: center; 
         font-size: 18px;
         margin-bottom: 25px;
     }
 }
 .fonctionnement {
-    padding: 30px 20px;
-    .item_fonctionnement {
-        background-color: $gris-fond2;
-        margin-bottom: 25px;
-        margin-left: 15px;
-        padding: 10px 10px;
-        display: flex;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px #bbbaba;
-        .chiffre {
-            width: 22px;
-            height: 22px;
-            background-color: $primary-color;
-            border-radius: 12px;
-            position: relative;
-            top: 13px;
-            left: -20px;
-            p {
-                margin: 0px; 
-                font-weight: bold;
-                color: #fff;
-                font-size: 12px;
-                text-align: center;
-                padding-top: 5px;
-            }
+    
+}
+.item-fonctionnement {
+    background-color: $gris-fond2;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #bbbaba;
+    .chiffre {
+        width: 22px;
+        height: 22px;
+        background-color: $primary-color;
+        border-radius: 12px;
+        position: relative;
+        top: 13px;
+        left: -20px;
+        p {
+            margin: 0px; 
+            font-weight: bold;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            padding-top: 5px;
         }
-        .text_fonctionnmt {
-            display: flex;
-            
-            a {
-                color: #000;
-                font-weight: bold;
-            }
-            i {
-                color: #7e7e7e;
-            }
-            .picto_fonct {
-                margin-right: 20px;
-            }
+    }
+    .text-fonctionnmt {
+        display: flex;
+        
+        a {
+            color: #000;
+            font-weight: bold;
+        }
+        i {
+            color: #7e7e7e;
+        }
+        .picto-fonct {
+            margin-right: 20px;
         }
     }
 }
-.restaurants {
-    background-color: $gris-fond2;
+
+.sections {
+    background-color: #fff;
     padding: 30px 20px;
-    .ribbon_resto {
-        float: right;
-        position: relative;
-        width: 80px;
-        padding-top: 3px;
-        text-align: center;
-        background-color: #99e2d0;
-        color: #008766;
-        font-weight: bold;
-        top: -140px;
-        right: 10px;
-        margin-bottom: -20px;
+    &--gris {
+        background-color: $gris-fond2;
     }
-    .card_resto {
-        height: 224px; 
-        background-color: #fff; 
-        box-shadow: 0px 3px 5px #bbbaba;
-        border-radius: 16px;
-        margin-bottom: 20px;
-        overflow: hidden;       
-        .image_resto {
-            height: 148px;
-            
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .argu_resto {
-            /*background-color: #008766;*/
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 5px;
-            
-        }
-        .text_resto {
-            padding-left: 14px;
-        }
-        
-        h3 {
-            font-weight: bold;
-            margin-top: 14px;
-            margin-bottom: 3px;
-        }
-        p {
-            margin-top: 0px;
-        }
-    }
-    
 }
