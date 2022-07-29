@@ -2,9 +2,13 @@
     position: relative;
     z-index: 10;
     height: 40px;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     box-shadow: 0px 5px 5px #bbbaba;
     padding-top: 20px;
+    overflow: hidden;
+    .logo {
+        margin: auto;
+    }
     &--ss-ombre {
         box-shadow: none;
     }

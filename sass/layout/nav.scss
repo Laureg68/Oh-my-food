@@ -1,6 +1,18 @@
-.nav-head-left {
+/*.nav-head-left {
     margin-left: 20px;
 }
 .nav-head-right {
     margin-right: 20px;
+}
+*/
+
+.nav {
+    position: relative;
+    top: -40px;
+    left: 10px;
+    z-index: 10;
+    &--invisible {
+        display: none;
+    }
+    
 }
