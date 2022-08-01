@@ -22,6 +22,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .logo {
@@ -50,6 +51,7 @@ a {
   border-radius: 14px;
   overflow: hidden;
   margin: 15px 0px;
+  box-shadow: 0px 5px 5px #8f8f8f;
 }
 .card .image_resto {
   height: 148px;
@@ -66,7 +68,7 @@ a {
   width: 80px;
   padding-top: 3px;
   text-align: center;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #008766;
   font-weight: bold;
   top: -140px;
@@ -78,7 +80,9 @@ a {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+}
+.card__argu--hover:hover .card-check {
+  display: block;
 }
 .card__argu h4 {
   font-size: 18px;
@@ -88,6 +92,29 @@ a {
 }
 .card__argu p {
   margin: 0px;
+}
+.card__argu .texte-argu {
+  padding: 12px;
+}
+.card__argu .card-prix {
+  padding-top: 12px;
+  margin-right: 10px;
+  float: right;
+}
+.card__argu .card-check {
+  width: 80px;
+  text-align: center;
+  padding-top: 20px;
+  float: right;
+}
+.card__argu .card-check--selectionne {
+  padding-top: 24px;
+  background-color: #99E2D0;
+  display: none;
+}
+.card__argu .card-check--selectionne p {
+  font-size: 20px;
+  color: #fff;
 }
 
 .btn-supo {
@@ -195,7 +222,8 @@ a {
   padding: 10px 10px;
   display: flex;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #bbbaba;
+  /*box-shadow: 5px 5px 5px #bbbaba;*/
+  box-shadow: 0px 5px 5px #8f8f8f;
 }
 .item-fonctionnement .chiffre {
   width: 22px;
@@ -301,6 +329,176 @@ footer ul li p {
 }
 footer ul li a {
   color: #fff;
+}
+
+.card-argu2 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu2__texte-argu2 {
+  background-color: green;
+  width: 100%;
+  margin-right: 0px;
+}
+.card-argu2__texte-argu2 h4, .card-argu2__texte-argu2 p {
+  text-overflow: string;
+}
+.card-argu2__check-argu2 {
+  position: relative;
+  right: 0px;
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu3 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu3__texte-argu3 {
+  background-color: green;
+  margin-right: 0px;
+}
+.card-argu3__texte-argu3 h4, .card-argu3__texte-argu3 p {
+  text-overflow: string;
+}
+.card-argu3__check-argu3 {
+  position: relative;
+  right: -80px;
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu4 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu4__texte-argu4 {
+  background-color: green;
+  width: 70%;
+  margin-right: 0px;
+}
+.card-argu4__texte-argu4 h4, .card-argu4__texte-argu4 p {
+  text-overflow: string;
+}
+.card-argu4__check-argu4 {
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu6 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  display: flex;
+}
+.card-argu6__texte-argu6 {
+  background-color: green;
+  width: 300px;
+  margin-right: 0px;
+}
+.card-argu6__texte-argu6 h4, .card-argu6__texte-argu6 p {
+  text-overflow: string;
+}
+.card-argu6__check-argu6 {
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu7 {
+  background-color: red;
+  width: 600px;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+.card-argu7__texte-argu7 {
+  background-color: green;
+  width: 500px;
+  margin-right: 0px;
+}
+.card-argu7__texte-argu7 h4, .card-argu7__texte-argu7 p {
+  text-overflow: string;
+}
+.card-argu7__check-argu7 {
+  right: 0px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+.cache8 {
+  width: 500px;
+  background-color: blue;
+  overflow: hidden;
+  display: flex;
+}
+
+.card-argu8 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu8__texte-argu8 {
+  background-color: green;
+  width: 500px;
+  margin-right: 0px;
+}
+.card-argu8__texte-argu8 h4, .card-argu8__texte-argu8 p {
+  text-overflow: string;
+}
+.card-argu8__check-argu8 {
+  position: relative;
+  padding: 20px;
+  text-overflow: clip;
+  width: 80px;
+  background-color: blueviolet;
+  display: none;
+}
+
+.cache9 {
+  width: 580px;
+  background-color: blue;
+  overflow: hidden;
+  display: flex;
+}
+
+.card-argu9 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  display: flex;
+}
+.card-argu9__texte-argu9 {
+  background-color: green;
+  width: 100%;
+  margin-right: 0px;
+}
+.card-argu9__texte-argu9 h4, .card-argu9__texte-argu9 p {
+  text-overflow: string;
+}
+.card-argu9__check-argu9 {
+  /*position: relative;*/
+  padding: 20px;
+  text-overflow: clip;
+  width: 80px;
+  background-color: blueviolet;
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

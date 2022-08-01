@@ -42,7 +42,8 @@
     padding: 10px 10px;
     display: flex;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #bbbaba;
+    /*box-shadow: 5px 5px 5px #bbbaba;*/
+    @include ombre-boite;
     .chiffre {
         width: 22px;
         height: 22px;

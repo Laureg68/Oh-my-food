@@ -1,14 +1,11 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$gris-fond2: #f6f6f6;
-$gris-ombre: #8f8f8f;
+
 
 .flex {
     display: flex;
 }
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .logo {
@@ -37,6 +34,8 @@ a {
     border-radius: 14px;  
     overflow: hidden;     
     margin: 15px 0px;
+    @include ombre-boite;
+
     .image_resto {
         height: 148px;
         overflow: hidden;
@@ -51,7 +50,7 @@ a {
             width: 80px;
             padding-top: 3px;
             text-align: center;
-            background-color: #99e2d0;
+            background-color: $tertiary-color;
             color: #008766;
             font-weight: bold;
             top: -140px;
@@ -64,7 +63,9 @@ a {
         max-width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 12px; 
+        &--hover:hover .card-check{
+            display: block;
+        }
         h4 {
             font-size: 18px;
             font-weight: bold;
@@ -73,6 +74,31 @@ a {
         }
         p {
             margin: 0px;
+        }
+        .texte-argu {
+            padding: 12px; 
+            
+        }
+        .card-prix {
+            padding-top: 12px; 
+            margin-right: 10px;
+            float: right;
+        }
+        .card-check {
+            width: 80px;
+            text-align: center;
+            padding-top: 20px;
+            float: right;
+            &--selectionne {
+                padding-top: 24px;
+                background-color: $tertiary-color;
+                display: none;
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+            
         }
     }
 }

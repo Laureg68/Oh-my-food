@@ -1,10 +1,189 @@
-.btn-like {
-    /*padding: 10px 0px 0px 0px;*/
-    p a {
-        font-size: 24px;       
-    }
-    &__picto {
-        text-shadow: 0px 1px 0px black, 1px 0px 0px black, -1px 0px 0px black, 0px -1px 0px black,;
-        color: #fff;
-    }
-}
+
+    
+    .card-argu2 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        
+        &__texte-argu2 {
+            background-color: green;
+            
+            width: 100%;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu2 {
+            position: relative;
+            right: 0px;
+            float: right;
+            width: 80px;
+          background-color: blueviolet;
+        }
+      }
+      $width-text-argu3: 100%;
+      $width-check-argu3: 80px;
+      
+      .card-argu3 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        
+        &__texte-argu3 {
+            background-color: green;
+            
+            
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu3 {
+            position: relative;
+            right: -$width-check-argu3;
+            float: right;
+            width: $width-check-argu3;
+          background-color: blueviolet;
+        }
+      }
+      $width-text-argu4: 100%;
+      $width-check-argu4: 80px;
+      $width-text-argu5: 70%;
+      .card-argu4 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        
+        &__texte-argu4 {
+            background-color: green;
+            
+            width: $width-text-argu5;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu4 {
+            
+            float: right;
+            width: $width-check-argu4;
+          background-color: blueviolet;
+        }
+      }
+      $width-text-argu6: 300px;
+      $width-check-argu6: 80px;
+      
+      .card-argu6 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        
+        display: flex;
+        
+        &__texte-argu6 {
+            background-color: green;
+            
+            width: $width-text-argu6;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu6{
+            
+            float: right;
+            width: $width-check-argu6;
+          background-color: blueviolet;
+        }
+      }
+      .card-argu7 {
+        background-color: red;
+        width: 600px;
+        padding: 12px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        &__texte-argu7 {
+            background-color: green;
+            
+            width: 500px;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu7 {
+            
+            right: 0px;
+            
+            width: 100px;
+          background-color: blueviolet;
+        }
+      }
+      
+      .cache8 {
+        width: 500px;
+        background-color: blue;
+        overflow: hidden;
+        display: flex;
+      }
+      $width-text-argu8: 500px;
+      $width-check-argu8: 80px;
+      .card-argu8 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        
+        &__texte-argu8 {
+            background-color: green;
+            
+            width:  $width-text-argu8;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu8 {
+            position: relative;
+            padding:20px;
+            text-overflow: clip;
+            width: $width-check-argu8;
+            background-color: blueviolet;
+            display:none;
+        }
+      }
+      .cache9 {
+        width: 580px;
+        background-color: blue;
+        overflow: hidden;
+        display: flex;
+      }
+      $width-text-argu9: 100%;
+      $width-check-argu9: 80px;
+      .card-argu9 {
+        background-color: red;
+        padding: 12px;
+        height: 100px;
+        
+        display: flex;
+        
+        &__texte-argu9 {
+            background-color: green;
+            
+            width:  $width-text-argu9;
+            margin-right: 0px;
+            h4, p {text-overflow: string;}
+        }
+        &__check-argu9 {
+            /*position: relative;*/
+            padding:20px;
+            text-overflow: clip;
+            width: $width-check-argu9;
+            background-color: blueviolet;
+            display: none;
+        
+        }
+      }
+      
+
+      
+
+      
