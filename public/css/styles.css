@@ -76,13 +76,9 @@ a {
   margin-bottom: -20px;
 }
 .card__argu {
-  width: auto;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.card__argu--hover:hover .card-check {
-  display: block;
+  height: 70px;
 }
 .card__argu h4 {
   font-size: 18px;
@@ -92,9 +88,15 @@ a {
 }
 .card__argu p {
   margin: 0px;
+  text-overflow: clip;
 }
 .card__argu .texte-argu {
+  width: 100%;
   padding: 12px;
+}
+.card__argu .texte-argu .text-prix {
+  display: flex;
+  justify-content: space-between;
 }
 .card__argu .card-prix {
   padding-top: 12px;
@@ -105,16 +107,21 @@ a {
   width: 80px;
   text-align: center;
   padding-top: 20px;
-  float: right;
 }
 .card__argu .card-check--selectionne {
   padding-top: 24px;
   background-color: #99E2D0;
-  display: none;
+  width: 0px;
+  float: right;
+  transition-property: width;
+  transition-duration: 500ms;
 }
 .card__argu .card-check--selectionne p {
   font-size: 20px;
   color: #fff;
+}
+.card__argu--hover:hover .card-check--selectionne {
+  width: 100px;
 }
 
 .btn-supo {
@@ -294,7 +301,7 @@ a {
 }
 
 .card .prix {
-  padding-top: 25px;
+  /*padding-top: 25px;*/
   font-weight: bold;
 }
 
