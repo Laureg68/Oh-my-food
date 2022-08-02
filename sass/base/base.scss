@@ -79,15 +79,14 @@ a {
             
             .text-prix {
                 display: flex;
-                justify-content: space-between;
-                
+                justify-content: space-between;                
             }   
         }        
         .card-prix {
             padding-top: 12px; 
+            padding-top: 40px;
             margin-right: 10px;
-            float: right;
-            
+            float: right;           
         }
         .card-check {
             width: 80px;           
@@ -101,13 +100,19 @@ a {
                 p {
                     font-size: 20px;
                     color: #fff;
-                }
+                    transform: rotate(0deg);
+                    transition-property: transform;                    
+                }                
                 transition-property: width;
                 transition-duration: 500ms;    
             }            
         }
         &--hover:hover .card-check--selectionne {            
-            width: 100px;           
+            width: 100px;
+            p {
+                transform: rotate(360deg);
+                transition-duration: 900ms;
+            }            
         }
     }
 }

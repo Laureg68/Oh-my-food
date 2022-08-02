@@ -100,6 +100,7 @@ a {
 }
 .card__argu .card-prix {
   padding-top: 12px;
+  padding-top: 40px;
   margin-right: 10px;
   float: right;
 }
@@ -119,9 +120,15 @@ a {
 .card__argu .card-check--selectionne p {
   font-size: 20px;
   color: #fff;
+  transform: rotate(0deg);
+  transition-property: transform;
 }
 .card__argu--hover:hover .card-check--selectionne {
   width: 100px;
+}
+.card__argu--hover:hover .card-check--selectionne p {
+  transform: rotate(360deg);
+  transition-duration: 900ms;
 }
 
 .btn-supo {
@@ -139,6 +146,9 @@ a {
 }
 .btn-supo--bottom {
   margin: 50px auto;
+}
+.btn-supo:hover {
+  background: red;
 }
 
 .btn-like a {
@@ -229,7 +239,6 @@ a {
   padding: 10px 10px;
   display: flex;
   border-radius: 20px;
-  /*box-shadow: 5px 5px 5px #bbbaba;*/
   box-shadow: 0px 5px 5px #8f8f8f;
 }
 .item-fonctionnement .chiffre {
@@ -261,6 +270,12 @@ a {
 }
 .item-fonctionnement .text-fonctionnmt .picto-fonct {
   margin-right: 20px;
+}
+.item-fonctionnement:hover {
+  background-color: #FF79DA;
+}
+.item-fonctionnement:hover p i {
+  color: #9356DC;
 }
 
 .sections {

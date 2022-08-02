@@ -42,7 +42,6 @@
     padding: 10px 10px;
     display: flex;
     border-radius: 20px;
-    /*box-shadow: 5px 5px 5px #bbbaba;*/
     @include ombre-boite;
     .chiffre {
         width: 22px;
@@ -73,6 +72,12 @@
         }
         .picto-fonct {
             margin-right: 20px;
+        }
+    }
+    &:hover {
+        background-color: $secondary-color;
+        p i {
+            color: $primary-color;
         }
     }
 }
