@@ -2,7 +2,7 @@
 .btn-supo {
     padding: 17px 0px 17px 0px;
     border-radius: 30px;
-    background:linear-gradient($secondary-color, $primary-color);
+    @include deg-bouton; 
     width:224px;
     margin: auto;
     font-size: 16px;
@@ -10,12 +10,16 @@
     color: #fff;
     font-weight: 900;
     letter-spacing: 1px;
-    box-shadow: 0px 3px 5px $gris-ombre;
+    /*box-shadow: 0px 3px 5px $gris-ombre;*/
+    @include ombre-boite;
     &--bottom {
         margin: 50px auto;
     }
     &:hover {
-        background: red;
+        @include deg-bouton-clair;
+        
+        @include ombre-boite-sombre;
+    
     }
 }
 .btn-like {

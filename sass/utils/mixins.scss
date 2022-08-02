@@ -1,3 +1,15 @@
-@mixin ombre-boite {
-    box-shadow: 0px 5px 5px $gris-ombre;
+
+@mixin deg-bouton {
+    background: linear-gradient($secondary-color, $primary-color);
+}
+@mixin deg-bouton-clair($color1: $secondary-color-clair, $color2: $primary-color-clair) {
+    background: linear-gradient($color1, $color2);
+}
+
+@mixin ombre-boite($color: $gris-ombre) {
+    box-shadow: 0px 5px 5px $color;
+}
+
+@mixin ombre-boite-sombre($color: $gris-ombre) {
+    box-shadow: 0px 5px 5px darken($color, 20%);
 }

@@ -75,7 +75,7 @@
         }
     }
     &:hover {
-        background-color: $secondary-color;
+        background-color: lighten($primary-color, 35%);
         p i {
             color: $primary-color;
         }

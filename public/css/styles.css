@@ -142,13 +142,15 @@ a {
   color: #fff;
   font-weight: 900;
   letter-spacing: 1px;
-  box-shadow: 0px 3px 5px #8f8f8f;
+  /*box-shadow: 0px 3px 5px $gris-ombre;*/
+  box-shadow: 0px 5px 5px #8f8f8f;
 }
 .btn-supo--bottom {
   margin: 50px auto;
 }
 .btn-supo:hover {
-  background: red;
+  background: linear-gradient(#fface8, #ae80e5);
+  box-shadow: 0px 5px 5px #5c5c5c;
 }
 
 .btn-like a {
@@ -272,7 +274,7 @@ a {
   margin-right: 20px;
 }
 .item-fonctionnement:hover {
-  background-color: #FF79DA;
+  background-color: #f2eafb;
 }
 .item-fonctionnement:hover p i {
   color: #9356DC;
