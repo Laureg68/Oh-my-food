@@ -16,6 +16,11 @@
     border-radius: 30px;
     padding: 20px;
     background-color: $gris-fond2;
+    .filet {
+        width: 50px;       
+        margin: 0px;
+        border-bottom: solid 3px #99E2D0
+    }
 }
 .enseigne-resto {
     display: flex;

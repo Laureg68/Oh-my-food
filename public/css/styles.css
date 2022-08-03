@@ -16,6 +16,12 @@ h2 {
   font-weight: 800;
 }
 
+.menu-etabl h3 {
+  text-transform: uppercase;
+  margin: 35px 0px 5px 0px;
+  /*border-bottom: 1px solid $tertiary-color;*/
+}
+
 .flex {
   display: flex;
 }
@@ -307,6 +313,11 @@ a {
   border-radius: 30px;
   padding: 20px;
   background-color: #f6f6f6;
+}
+.carte-resto .filet {
+  width: 50px;
+  margin: 0px;
+  border-bottom: solid 3px #99E2D0;
 }
 
 .enseigne-resto {
