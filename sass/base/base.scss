@@ -116,3 +116,9 @@ a {
         }
     }
 }
+.groupe-plats a:first-of-type > .card {
+    background-color: red;
+    }
+    .groupe-plats a:nth-of-type(2) > .card {
+        background-color: blue;
+        }
