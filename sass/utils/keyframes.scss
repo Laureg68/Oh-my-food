@@ -1,0 +1,20 @@
+@keyframes intro-plat{
+    0% {
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+@keyframes intro-plat2 {
+    0% {
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}

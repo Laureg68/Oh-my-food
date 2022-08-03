@@ -136,13 +136,39 @@ a {
   transform: rotate(360deg);
   transition-duration: 900ms;
 }
-
-.groupe-plats a:first-of-type > .card {
-  background-color: red;
+.card--anim {
+  transform: translatey(0px);
+  opacity: 0;
+  animation-name: intro-plat;
+  opacity: 1;
 }
 
-.groupe-plats a:nth-of-type(2) > .card {
-  background-color: blue;
+.groupe-plats a:first-of-type > .card--anim {
+  /*background-color: red;*/
+  animation-duration: 2000ms;
+  animation-delay: 1000ms;
+}
+
+.groupe-plats a:nth-of-type(2) > .card--anim {
+  /*background-color: blue;*/
+  animation-duration: 2000ms;
+  animation-delay: 1500ms;
+}
+
+.groupe-plats a:nth-of-type(3) > .card--anim {
+  /*background-color: green;*/
+  animation-duration: 2000ms;
+  animation-delay: 2000ms;
+}
+
+.groupe-plats a:nth-of-type(4) > .card--anim {
+  /*background-color: green;*/
+  animation-duration: 2000ms;
+  animation-delay: 2500ms;
+}
+
+.card--anim {
+  opacity: 1;
 }
 
 .btn-supo {
@@ -341,15 +367,6 @@ a {
   font-weight: bold;
 }
 
-/*
-&--anim {
-    animation-name: intro-plats;
-    animation-duration: 1500ms;
-
-
-    opacity: 0;
-    transition: opacity 500ms, transform 1000ms;
-}*/
 footer {
   background-color: #282828;
   padding: 20px;
@@ -381,6 +398,16 @@ footer ul li p {
 }
 footer ul li a {
   color: #fff;
+}
+
+.selecteur {
+  background-color: red;
+}
+.selecteur--modifie1 h4 {
+  color: green;
+}
+.selecteur--modifie2 h4 {
+  color: blue;
 }
 
 .card-argu2 {

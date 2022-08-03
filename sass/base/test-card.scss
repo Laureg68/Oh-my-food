@@ -1,0 +1,115 @@
+/*.card {
+    
+    &__argu {        
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            
+        }
+        p {
+            margin: 0px;
+            text-overflow: clip;
+        }
+        .texte-argu {
+            width: 100%;
+            padding: 12px; 
+            
+            .text-prix {
+                display: flex;
+                justify-content: space-between;                
+            }   
+        }        
+        .card-prix {
+            padding-top: 12px; 
+            padding-top: 40px;
+            margin-right: 10px;
+            float: right;           
+        }
+        .card-check {
+            width: 80px;           
+            text-align: center;
+            padding-top: 20px;            
+            &--selectionne {
+                padding-top: 24px;             
+                background-color: $tertiary-color;
+                width: 0px;
+                float: right;
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                    transform: rotate(0deg);
+                    transition-property: transform;                    
+                }                
+                transition-property: width;
+                transition-duration: 500ms;    
+            }            
+        }
+        &--hover:hover .card-check--selectionne {            
+            width: 100px;
+            p {
+                transform: rotate(360deg);
+                transition-duration: 900ms;
+            }            
+        }
+    }
+    
+    
+}*/
+@mixin spec-card {
+    border-radius: 14px;  
+    overflow: hidden;     
+    margin: 15px 0px;
+}
+
+.fond-card-resto {
+    background-color: blue;
+    /*background-color: #fff;*/
+    @include spec-card;
+    @include ombre-boite;
+    .image_resto {
+        height: 148px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .ribbon-resto {
+        float: right;
+        position: relative;
+        width: 80px;
+        padding-top: 3px;
+        text-align: center;
+        background-color: $tertiary-color;
+        color: $color4;
+        font-weight: bold;
+        top: -140px;
+        right: 10px;
+        margin-bottom: -20px;
+    }
+}
+@keyframes intro-plat2 {
+    0% {
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+.fond-card-plat {
+    background-color: red;
+    @include spec-card;
+    @include ombre-boite;
+    transform: translatey(50px);
+    opacity: 1;
+    animation-name: intro-plat;
+        
+}

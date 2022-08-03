@@ -1,5 +1,18 @@
 
-    
+    .selecteur {
+      background-color: red;
+      &--modifie1 {
+          h4 {
+              color:green;
+          }
+      }
+      &--modifie2 {
+          h4 {
+              color: blue;
+          }
+      }
+  }
+  
     .card-argu2 {
         background-color: red;
         padding: 12px;
