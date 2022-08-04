@@ -1,3 +1,13 @@
+@keyframes intro-plat {
+  0% {
+    transform: translatey(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -137,10 +147,10 @@ a {
   transition-duration: 900ms;
 }
 .card--anim {
-  transform: translatey(0px);
+  transform: translatey(50px);
   opacity: 0;
   animation-name: intro-plat;
-  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 .groupe-plats a:first-of-type > .card--anim {
@@ -165,10 +175,6 @@ a {
   /*background-color: green;*/
   animation-duration: 2000ms;
   animation-delay: 2500ms;
-}
-
-.card--anim {
-  opacity: 1;
 }
 
 .btn-supo {

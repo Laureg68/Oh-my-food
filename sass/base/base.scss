@@ -34,6 +34,7 @@ a {
     border-radius: 14px;  
     overflow: hidden;     
     margin: 15px 0px;
+    
     @include ombre-boite;
     .image_resto {
         height: 148px;
@@ -113,22 +114,17 @@ a {
                 transition-duration: 900ms;
             }            
         }
+        
     }
     &--anim {
-        transform: translatey(0px);
+        transform: translatey(50px);
         opacity: 0;
         animation-name: intro-plat;
-        opacity: 1;
+        animation-fill-mode: forwards;
     }
     
 }
-@mixin mxn-card {
-    background-color: #fff;
-    border-radius: 14px;  
-    overflow: hidden;     
-    margin: 15px 0px;
-    @include ombre-boite;
-}
+
 
 .groupe-plats a:first-of-type > .card--anim {
     /*background-color: red;*/
@@ -149,7 +145,4 @@ a {
     /*background-color: green;*/
     animation-duration: 2000ms;
     animation-delay: 2500ms;
-    }
-    .card--anim {
-        opacity: 1;
     }
