@@ -104,7 +104,6 @@ a {
 }
 .card__argu p {
   margin: 0px;
-  text-overflow: clip;
 }
 .card__argu .texte-argu {
   width: 100%;
@@ -115,8 +114,7 @@ a {
   justify-content: space-between;
 }
 .card__argu .card-prix {
-  padding-top: 12px;
-  padding-top: 40px;
+  padding-top: 38px;
   margin-right: 10px;
   float: right;
 }
@@ -145,6 +143,15 @@ a {
 .card__argu--hover:hover .card-check--selectionne p {
   transform: rotate(360deg);
   transition-duration: 900ms;
+}
+.card__argu:hover {
+  /*max-width: 100%;*/
+}
+.card__argu:hover .texte-argu p {
+  /*    
+      white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }
 .card--anim {
   transform: translatey(50px);
@@ -175,6 +182,21 @@ a {
   /*background-color: green;*/
   animation-duration: 2000ms;
   animation-delay: 2500ms;
+}
+
+.text-overflow {
+  padding: 5px;
+  background-color: antiquewhite;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.text-overflow p {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn-supo {
@@ -369,7 +391,6 @@ a {
 }
 
 .card .prix {
-  /*padding-top: 25px;*/
   font-weight: bold;
 }
 

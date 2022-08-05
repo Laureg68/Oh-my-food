@@ -71,10 +71,11 @@ a {
         }
         p {
             margin: 0px;
-            text-overflow: clip;
+            
         }
         .texte-argu {
-            width: 100%;
+           width: 100%;
+        
             padding: 12px; 
             
             .text-prix {
@@ -83,8 +84,8 @@ a {
             }   
         }        
         .card-prix {
-            padding-top: 12px; 
-            padding-top: 40px;
+            
+            padding-top: 38px;
             margin-right: 10px;
             float: right;           
         }
@@ -112,7 +113,20 @@ a {
             p {
                 transform: rotate(360deg);
                 transition-duration: 900ms;
-            }            
+                
+            } 
+            
+            
+        }
+
+        &:hover {
+            /*max-width: 100%;*/
+            .texte-argu p {
+            /*    
+                white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; */
+            }
         }
         
     }
@@ -145,4 +159,21 @@ a {
     /*background-color: green;*/
     animation-duration: 2000ms;
     animation-delay: 2500ms;
+    }
+
+
+    .text-overflow {
+        padding: 5px;
+        background-color: antiquewhite;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        
+        
+        p {display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
