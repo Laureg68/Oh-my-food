@@ -144,9 +144,6 @@ a {
   transform: rotate(360deg);
   transition-duration: 900ms;
 }
-.card__argu:hover {
-  /*max-width: 100%;*/
-}
 .card__argu:hover .texte-argu p {
   /*    
       white-space: nowrap;
