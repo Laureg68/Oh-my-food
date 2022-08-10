@@ -1,10 +1,10 @@
 @keyframes intro-plat {
   0% {
-    transform: translatey(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
-    transform: translatey(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -62,11 +62,128 @@ a {
   object-fit: cover;
 }
 
+/*
+.card {
+    background-color: #fff;
+    border-radius: 14px;  
+    overflow: hidden;     
+    margin: 15px 0px;
+
+    @include ombre-boite;
+    .image_resto {
+        height: 148px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ribbon-resto {
+            float: right;
+            position: relative;
+            width: 80px;
+            padding-top: 3px;
+            text-align: center;
+            background-color: $tertiary-color;
+            color: $color4;
+            font-weight: bold;
+            top: -140px;
+            right: 10px;
+            margin-bottom: -20px;
+        }
+    }
+    &__argu {        
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 5px;
+
+        }
+        p {
+            margin: 0px;
+
+        }
+        .texte-argu {
+           width: 100%;
+
+            padding: 12px; 
+
+            .text-prix {
+                display: flex;
+                justify-content: space-between;                
+            }   
+        }        
+        .card-prix {
+
+            padding-top: 38px;
+            margin-right: 10px;
+            float: right;  
+            p {
+                font-weight: bold;
+            }
+
+        }
+        .card-check {
+            width: 80px;           
+            text-align: center;
+            padding-top: 20px;            
+            &--selectionne {
+                padding-top: 24px;             
+                background-color: $tertiary-color;
+                width: 0px;
+                float: right;
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                    transform: rotate(0deg);
+                    transition-property: transform;                    
+                }                
+                transition-property: width;
+                transition-duration: 500ms;    
+            }            
+        }
+        &--hover:hover .card-check--selectionne {            
+            width: 100px;
+            p {
+                transform: rotate(360deg);
+                transition-duration: 900ms;
+
+            } 
+
+
+        }
+
+        &:hover {
+
+            .texte-argu p {
+
+            height: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            }
+        }
+
+    }
+    &--anim {
+        transform: translatey(50px);
+        opacity: 0;
+        animation-name: intro-plat;
+        animation-fill-mode: forwards;
+    }
+
+}
+*/
 .card {
   background-color: #fff;
   border-radius: 14px;
   overflow: hidden;
   margin: 15px 0px;
+  /*display: flex;*/
   box-shadow: 0px 5px 5px #8f8f8f;
 }
 .card .image_resto {
@@ -92,108 +209,107 @@ a {
   margin-bottom: -20px;
 }
 .card__argu {
+  /*background: blue;*/
+  /*display: flex;
+  justify-content: space-between;*/
+  height: 70px;
+  width: 100%;
+  transition-duration: 500ms;
   display: flex;
   justify-content: space-between;
-  height: 70px;
 }
 .card__argu h4 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__argu p {
   margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__argu .texte-argu {
-  width: 100%;
+  /*width: 100%;*/
+  max-width: 80%;
   padding: 12px;
-}
-.card__argu .texte-argu .text-prix {
-  display: flex;
-  justify-content: space-between;
+  /*.text-prix {
+      display: flex;
+      justify-content: space-between;                
+  }   */
 }
 .card__argu .card-prix {
+  width: 20%;
   padding-top: 38px;
   margin-right: 10px;
-  float: right;
+  /*float: right;  */
 }
-.card__argu .card-check {
-  width: 80px;
-  text-align: center;
-  padding-top: 20px;
+.card__argu .card-prix p {
+  font-weight: bold;
+  text-align: right;
 }
-.card__argu .card-check--selectionne {
-  padding-top: 24px;
-  background-color: #99E2D0;
-  width: 0px;
-  float: right;
-  transition-property: width;
-  transition-duration: 500ms;
+.card__argu:hover {
+  /*background: red;*/
+  width: 80%;
 }
-.card__argu .card-check--selectionne p {
+.card__argu:hover + .card-check {
+  /*background: green;*/
+  width: 20%;
+}
+.card__argu:hover + .card-check p {
   font-size: 20px;
   color: #fff;
-  transform: rotate(0deg);
-  transition-property: transform;
-}
-.card__argu--hover:hover .card-check--selectionne {
-  width: 100px;
-}
-.card__argu--hover:hover .card-check--selectionne p {
   transform: rotate(360deg);
-  transition-duration: 900ms;
+  transition-duration: 500ms;
 }
-.card__argu:hover .texte-argu p {
-  /*    
-      white-space: nowrap;
+.card .card-check {
+  background-color: aquamarine;
+  position: absolute;
+  right: 0%;
   overflow: hidden;
-  text-overflow: ellipsis; */
+  width: 0%;
+  height: 100%;
+  transform-origin: right 50%;
+  transition-duration: 500ms;
+  text-align: center;
+}
+.card .card-check p {
+  color: #fff;
+  font-size: 20px;
 }
 .card--anim {
-  transform: translatey(50px);
+  transform: translateY(50px);
   opacity: 0;
   animation-name: intro-plat;
   animation-fill-mode: forwards;
 }
 
-.groupe-plats a:first-of-type > .card--anim {
+.groupe-plats div:first-of-type {
   /*background-color: red;*/
   animation-duration: 2000ms;
   animation-delay: 1000ms;
 }
 
-.groupe-plats a:nth-of-type(2) > .card--anim {
+.groupe-plats div:nth-of-type(2) {
   /*background-color: blue;*/
   animation-duration: 2000ms;
   animation-delay: 1500ms;
 }
 
-.groupe-plats a:nth-of-type(3) > .card--anim {
+.groupe-plats div:nth-of-type(3) {
   /*background-color: green;*/
   animation-duration: 2000ms;
   animation-delay: 2000ms;
 }
 
-.groupe-plats a:nth-of-type(4) > .card--anim {
+.groupe-plats div:nth-of-type(4) {
   /*background-color: green;*/
   animation-duration: 2000ms;
   animation-delay: 2500ms;
-}
-
-.text-overflow {
-  padding: 5px;
-  background-color: antiquewhite;
-  width: 300px;
-  height: 50px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.text-overflow p {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-supo {
@@ -387,10 +503,6 @@ a {
   padding: 0px;
 }
 
-.card .prix {
-  font-weight: bold;
-}
-
 footer {
   background-color: #282828;
   padding: 20px;
@@ -422,186 +534,6 @@ footer ul li p {
 }
 footer ul li a {
   color: #fff;
-}
-
-.selecteur {
-  background-color: red;
-}
-.selecteur--modifie1 h4 {
-  color: green;
-}
-.selecteur--modifie2 h4 {
-  color: blue;
-}
-
-.card-argu2 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-}
-.card-argu2__texte-argu2 {
-  background-color: green;
-  width: 100%;
-  margin-right: 0px;
-}
-.card-argu2__texte-argu2 h4, .card-argu2__texte-argu2 p {
-  text-overflow: string;
-}
-.card-argu2__check-argu2 {
-  position: relative;
-  right: 0px;
-  float: right;
-  width: 80px;
-  background-color: blueviolet;
-}
-
-.card-argu3 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-}
-.card-argu3__texte-argu3 {
-  background-color: green;
-  margin-right: 0px;
-}
-.card-argu3__texte-argu3 h4, .card-argu3__texte-argu3 p {
-  text-overflow: string;
-}
-.card-argu3__check-argu3 {
-  position: relative;
-  right: -80px;
-  float: right;
-  width: 80px;
-  background-color: blueviolet;
-}
-
-.card-argu4 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-}
-.card-argu4__texte-argu4 {
-  background-color: green;
-  width: 70%;
-  margin-right: 0px;
-}
-.card-argu4__texte-argu4 h4, .card-argu4__texte-argu4 p {
-  text-overflow: string;
-}
-.card-argu4__check-argu4 {
-  float: right;
-  width: 80px;
-  background-color: blueviolet;
-}
-
-.card-argu6 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  display: flex;
-}
-.card-argu6__texte-argu6 {
-  background-color: green;
-  width: 300px;
-  margin-right: 0px;
-}
-.card-argu6__texte-argu6 h4, .card-argu6__texte-argu6 p {
-  text-overflow: string;
-}
-.card-argu6__check-argu6 {
-  float: right;
-  width: 80px;
-  background-color: blueviolet;
-}
-
-.card-argu7 {
-  background-color: red;
-  width: 600px;
-  padding: 12px;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-}
-.card-argu7__texte-argu7 {
-  background-color: green;
-  width: 500px;
-  margin-right: 0px;
-}
-.card-argu7__texte-argu7 h4, .card-argu7__texte-argu7 p {
-  text-overflow: string;
-}
-.card-argu7__check-argu7 {
-  right: 0px;
-  width: 100px;
-  background-color: blueviolet;
-}
-
-.cache8 {
-  width: 500px;
-  background-color: blue;
-  overflow: hidden;
-  display: flex;
-}
-
-.card-argu8 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-}
-.card-argu8__texte-argu8 {
-  background-color: green;
-  width: 500px;
-  margin-right: 0px;
-}
-.card-argu8__texte-argu8 h4, .card-argu8__texte-argu8 p {
-  text-overflow: string;
-}
-.card-argu8__check-argu8 {
-  position: relative;
-  padding: 20px;
-  text-overflow: clip;
-  width: 80px;
-  background-color: blueviolet;
-  display: none;
-}
-
-.cache9 {
-  width: 580px;
-  background-color: blue;
-  overflow: hidden;
-  display: flex;
-}
-
-.card-argu9 {
-  background-color: red;
-  padding: 12px;
-  height: 100px;
-  display: flex;
-}
-.card-argu9__texte-argu9 {
-  background-color: green;
-  width: 100%;
-  margin-right: 0px;
-}
-.card-argu9__texte-argu9 h4, .card-argu9__texte-argu9 p {
-  text-overflow: string;
-}
-.card-argu9__check-argu9 {
-  /*position: relative;*/
-  padding: 20px;
-  text-overflow: clip;
-  width: 80px;
-  background-color: blueviolet;
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
