@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes intro-plat {
   0% {
     transform: translatey(50px);
@@ -157,6 +158,7 @@ a {
   animation-fill-mode: forwards;
 }
 
+/* possibilité de faire une boucle */
 .groupe-plats a:first-of-type > .card--anim {
   /*background-color: red;*/
   animation-duration: 2000ms;
