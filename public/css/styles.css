@@ -234,13 +234,16 @@ a {
   text-overflow: ellipsis;
 }
 .card__argu .texte-argu {
-  /*width: 100%;*/
-  max-width: 80%;
+  width: 100%;
+  /*max-width: 80%;*/
   padding: 12px;
   /*.text-prix {
       display: flex;
       justify-content: space-between;                
   }   */
+}
+.card__argu .texte-argu--carte {
+  max-width: 80%;
 }
 .card__argu .card-prix {
   width: 20%;

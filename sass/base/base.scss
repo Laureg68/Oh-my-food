@@ -198,10 +198,12 @@ a {
                 text-overflow: ellipsis;
             }
             .texte-argu {
-               /*width: 100%;*/
-                max-width: 80%;
+                width: 100%;
+                /*max-width: 80%;*/
                 padding: 12px; 
-                
+                &--carte {
+                    max-width: 80%;
+                }
                 /*.text-prix {
                     display: flex;
                     justify-content: space-between;                
