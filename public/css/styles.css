@@ -280,6 +280,22 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /*.bloc-like {
+
+      width: 60px;
+      display: flex;
+      padding: 20px 0px 0px 20px;
+      &:hover {
+          .btn-like1 {
+              opacity: 1;
+          }
+          .btn-like2 {
+              opacity: 0;
+          }
+      }
+
+
+  }*/
 }
 .card__argu-resto .texte-resto {
   padding: 12px;
@@ -295,18 +311,6 @@ a {
 }
 .card__argu-resto .texte-resto p {
   margin: 0px;
-}
-.card__argu-resto .bloc-like {
-  /*background-color: aqua;*/
-  width: 60px;
-  display: flex;
-  padding: 20px 0px 0px 20px;
-}
-.card__argu-resto .bloc-like:hover .btn-like1 {
-  opacity: 1;
-}
-.card__argu-resto .bloc-like:hover .btn-like2 {
-  opacity: 0;
 }
 .card .card-check {
   background-color: aquamarine;
@@ -328,6 +332,18 @@ a {
   opacity: 0;
   animation-name: intro-plat;
   animation-fill-mode: forwards;
+}
+
+.bloc-like {
+  width: 60px;
+  display: flex;
+  padding: 20px 0px 0px 20px;
+}
+.bloc-like:hover .btn-like1 {
+  opacity: 1;
+}
+.bloc-like:hover .btn-like2 {
+  opacity: 0;
 }
 
 .groupe-plats div:first-of-type {

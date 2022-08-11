@@ -252,8 +252,8 @@ a {
                     margin: 0px;
                 }
             }
-            .bloc-like {
-                /*background-color: aqua;*/
+            /*.bloc-like {
+                
                 width: 60px;
                 display: flex;
                 padding: 20px 0px 0px 20px;
@@ -267,7 +267,7 @@ a {
                 }
                 
             
-            }
+            }*/
             
             
         }
@@ -297,7 +297,22 @@ a {
         }
         
     }
-
+    .bloc-like {
+                
+        width: 60px;
+        display: flex;
+        padding: 20px 0px 0px 20px;
+        &:hover {
+            .btn-like1 {
+                opacity: 1;
+            }
+            .btn-like2 {
+                opacity: 0;
+            }
+        }
+        
+    
+    }
 
 .groupe-plats div:first-of-type {
     /*background-color: red;*/
