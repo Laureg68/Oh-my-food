@@ -1,3 +1,144 @@
+/*$anim-dur / $num-bars; deprecated */
+@keyframes anim {
+  0% {
+    scaleY: 100%;
+  }
+  99% {
+    opacity: 90%;
+    scaleY: 100%;
+  }
+  100% {
+    opacity: 0%;
+    scaleY: 0%;
+    z-index: -10;
+  }
+}
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.anim-intro {
+  transform-origin: 0% 0%;
+  position: absolute;
+  top: 0px;
+  padding-top: 204px;
+  z-index: 10;
+  background-color: #fff;
+  opacity: 1;
+  width: 100%;
+  height: 3000px;
+  scaleY: 100%;
+  animation: anim 2000ms ease-out forwards;
+}
+.anim-intro .load {
+  margin: auto;
+  width: 120px;
+}
+
+.load {
+  width: 160px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.load__bar {
+  background-color: #15DEA5;
+  height: 100%;
+  width: 16px;
+  animation: bars 1000ms backwards infinite ease-in-out alternate;
+  /*timing-function: ease-in-out;*/
+  /*animation-direction: alternate; (>>> normal reverse alternate) */
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--1-inv {
+  animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--1-vart {
+  animation-delay: 1235ms;
+  animation-direction: alternate-reverse;
+  /*animation-fill-mode: forwards;*/
+  background-color: #0E397F;
+}
+.load__bar--1-vart:hover {
+  animation-play-state: paused;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--2-inv {
+  animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--2-vart {
+  animation-delay: 1075ms;
+  animation-direction: alternate-reverse;
+  /*animation-fill-mode: forwards;*/
+  background-color: #0E397F;
+}
+.load__bar--2-vart:hover {
+  animation-play-state: paused;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--3-inv {
+  animation-delay: 600ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--3-vart {
+  animation-delay: 1170ms;
+  animation-direction: alternate-reverse;
+  /*animation-fill-mode: forwards;*/
+  background-color: #0E397F;
+}
+.load__bar--3-vart:hover {
+  animation-play-state: paused;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--4-inv {
+  animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--4-vart {
+  animation-delay: 1190ms;
+  animation-direction: alternate-reverse;
+  /*animation-fill-mode: forwards;*/
+  background-color: #0E397F;
+}
+.load__bar--4-vart:hover {
+  animation-play-state: paused;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+.load__bar--5-inv {
+  animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+.load__bar--5-vart {
+  animation-delay: 1615ms;
+  animation-direction: alternate-reverse;
+  /*animation-fill-mode: forwards;*/
+  background-color: #0E397F;
+}
+.load__bar--5-vart:hover {
+  animation-play-state: paused;
+}
+
 @keyframes intro-plat {
   0% {
     transform: translateY(50px);
@@ -62,122 +203,6 @@ a {
   object-fit: cover;
 }
 
-/*
-.card {
-    background-color: #fff;
-    border-radius: 14px;  
-    overflow: hidden;     
-    margin: 15px 0px;
-
-    @include ombre-boite;
-    .image_resto {
-        height: 148px;
-        overflow: hidden;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .ribbon-resto {
-            float: right;
-            position: relative;
-            width: 80px;
-            padding-top: 3px;
-            text-align: center;
-            background-color: $tertiary-color;
-            color: $color4;
-            font-weight: bold;
-            top: -140px;
-            right: 10px;
-            margin-bottom: -20px;
-        }
-    }
-    &__argu {        
-        display: flex;
-        justify-content: space-between;
-        height: 70px;
-        h4 {
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 0px;
-            margin-bottom: 5px;
-
-        }
-        p {
-            margin: 0px;
-
-        }
-        .texte-argu {
-           width: 100%;
-
-            padding: 12px; 
-
-            .text-prix {
-                display: flex;
-                justify-content: space-between;                
-            }   
-        }        
-        .card-prix {
-
-            padding-top: 38px;
-            margin-right: 10px;
-            float: right;  
-            p {
-                font-weight: bold;
-            }
-
-        }
-        .card-check {
-            width: 80px;           
-            text-align: center;
-            padding-top: 20px;            
-            &--selectionne {
-                padding-top: 24px;             
-                background-color: $tertiary-color;
-                width: 0px;
-                float: right;
-                p {
-                    font-size: 20px;
-                    color: #fff;
-                    transform: rotate(0deg);
-                    transition-property: transform;                    
-                }                
-                transition-property: width;
-                transition-duration: 500ms;    
-            }            
-        }
-        &--hover:hover .card-check--selectionne {            
-            width: 100px;
-            p {
-                transform: rotate(360deg);
-                transition-duration: 900ms;
-
-            } 
-
-
-        }
-
-        &:hover {
-
-            .texte-argu p {
-
-            height: 20px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            }
-        }
-
-    }
-    &--anim {
-        transform: translatey(50px);
-        opacity: 0;
-        animation-name: intro-plat;
-        animation-fill-mode: forwards;
-    }
-
-}
-*/
 .card {
   background-color: #fff;
   border-radius: 14px;
@@ -435,7 +460,7 @@ a {
 
 .head-page {
   position: relative;
-  z-index: 10;
+  z-index: 20;
   height: 40px;
   /*justify-content: space-between;*/
   box-shadow: 0px 5px 5px #bbbaba;
