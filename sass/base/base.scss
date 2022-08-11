@@ -35,7 +35,6 @@ a {
         border-radius: 14px;  
         overflow: hidden;     
         margin: 15px 0px;
-        /*display: flex;*/
         @include ombre-boite;
         .image_resto {
             height: 148px;
@@ -60,22 +59,12 @@ a {
             }
         }
         &__argu {
-            /*background: blue;*/
-            /*display: flex;
-            justify-content: space-between;*/
             height: 70px;
             width:100%;
             transition-duration: 500ms;
             display: flex;
             justify-content: space-between;
-            h4 {
-                /*font-size: 18px;
-                font-weight: bold;
-                margin-top: 0px;
-                margin-bottom: 5px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;*/ 
+            h4 { 
                 @include card-h4;
             }
             p {
@@ -86,21 +75,15 @@ a {
             }
             .texte-argu {
                 width: 100%;
-                /*max-width: 80%;*/
                 padding: 12px; 
                 &--carte {
                     max-width: 80%;
                 }
-                /*.text-prix {
-                    display: flex;
-                    justify-content: space-between;                
-                }   */
             }        
             .card-prix {
                 width: 20%;
                 padding-top: 38px;
                 margin-right: 10px;
-                /*float: right;  */
                 p {
                     font-weight: bold;
                     text-align: right;
@@ -124,7 +107,6 @@ a {
         }
         
         &__argu-resto {
-            /*background-color: red;*/
             height: 70px;
             width:100%;
             display: flex;

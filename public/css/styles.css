@@ -3,6 +3,9 @@
   0% {
     scaleY: 100%;
   }
+  50% {
+    opacity: 90%;
+  }
   99% {
     opacity: 90%;
     scaleY: 100%;
@@ -27,12 +30,12 @@
   top: 0px;
   padding-top: 204px;
   z-index: 10;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   opacity: 1;
   width: 100%;
-  height: 3000px;
+  height: 100%;
   scaleY: 100%;
-  animation: anim 2000ms ease-out forwards;
+  animation: anim 10000ms ease-out forwards;
 }
 .anim-intro .load {
   margin: auto;
@@ -62,7 +65,7 @@
   background-color: #0E397F;
 }
 .load__bar--1-vart {
-  animation-delay: 1235ms;
+  animation-delay: 1250ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -79,7 +82,7 @@
   background-color: #0E397F;
 }
 .load__bar--2-vart {
-  animation-delay: 1075ms;
+  animation-delay: 1315ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -96,7 +99,7 @@
   background-color: #0E397F;
 }
 .load__bar--3-vart {
-  animation-delay: 1170ms;
+  animation-delay: 960ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -113,7 +116,7 @@
   background-color: #0E397F;
 }
 .load__bar--4-vart {
-  animation-delay: 1190ms;
+  animation-delay: 1370ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -130,7 +133,7 @@
   background-color: #0E397F;
 }
 .load__bar--5-vart {
-  animation-delay: 1615ms;
+  animation-delay: 1465ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -208,7 +211,6 @@ a {
   border-radius: 14px;
   overflow: hidden;
   margin: 15px 0px;
-  /*display: flex;*/
   box-shadow: 0px 5px 5px #8f8f8f;
 }
 .card .image_resto {
@@ -234,9 +236,6 @@ a {
   margin-bottom: -20px;
 }
 .card__argu {
-  /*background: blue;*/
-  /*display: flex;
-  justify-content: space-between;*/
   height: 70px;
   width: 100%;
   transition-duration: 500ms;
@@ -244,13 +243,6 @@ a {
   justify-content: space-between;
 }
 .card__argu h4 {
-  /*font-size: 18px;
-  font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;*/
   font-size: 18px;
   font-weight: bold;
   margin-top: 0px;
@@ -267,12 +259,7 @@ a {
 }
 .card__argu .texte-argu {
   width: 100%;
-  /*max-width: 80%;*/
   padding: 12px;
-  /*.text-prix {
-      display: flex;
-      justify-content: space-between;                
-  }   */
 }
 .card__argu .texte-argu--carte {
   max-width: 80%;
@@ -281,7 +268,6 @@ a {
   width: 20%;
   padding-top: 38px;
   margin-right: 10px;
-  /*float: right;  */
 }
 .card__argu .card-prix p {
   font-weight: bold;
@@ -300,7 +286,6 @@ a {
   transition-duration: 500ms;
 }
 .card__argu-resto {
-  /*background-color: red;*/
   height: 70px;
   width: 100%;
   display: flex;
@@ -435,9 +420,6 @@ a {
 .btn-like1 {
   font-size: 24px;
   margin: 0px;
-  /*position: relative;
-  top : 22px;
-  left : 25px;*/
   background: linear-gradient(to right, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -643,6 +625,186 @@ footer ul li p {
 }
 footer ul li a {
   color: #fff;
+}
+
+.selecteur {
+  background-color: red;
+}
+.selecteur--modifie1 h4 {
+  color: green;
+}
+.selecteur--modifie2 h4 {
+  color: blue;
+}
+
+.card-argu2 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu2__texte-argu2 {
+  background-color: green;
+  width: 100%;
+  margin-right: 0px;
+}
+.card-argu2__texte-argu2 h4, .card-argu2__texte-argu2 p {
+  text-overflow: string;
+}
+.card-argu2__check-argu2 {
+  position: relative;
+  right: 0px;
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu3 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu3__texte-argu3 {
+  background-color: green;
+  margin-right: 0px;
+}
+.card-argu3__texte-argu3 h4, .card-argu3__texte-argu3 p {
+  text-overflow: string;
+}
+.card-argu3__check-argu3 {
+  position: relative;
+  right: -80px;
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu4 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu4__texte-argu4 {
+  background-color: green;
+  width: 70%;
+  margin-right: 0px;
+}
+.card-argu4__texte-argu4 h4, .card-argu4__texte-argu4 p {
+  text-overflow: string;
+}
+.card-argu4__check-argu4 {
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu6 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  display: flex;
+}
+.card-argu6__texte-argu6 {
+  background-color: green;
+  width: 300px;
+  margin-right: 0px;
+}
+.card-argu6__texte-argu6 h4, .card-argu6__texte-argu6 p {
+  text-overflow: string;
+}
+.card-argu6__check-argu6 {
+  float: right;
+  width: 80px;
+  background-color: blueviolet;
+}
+
+.card-argu7 {
+  background-color: red;
+  width: 600px;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+.card-argu7__texte-argu7 {
+  background-color: green;
+  width: 500px;
+  margin-right: 0px;
+}
+.card-argu7__texte-argu7 h4, .card-argu7__texte-argu7 p {
+  text-overflow: string;
+}
+.card-argu7__check-argu7 {
+  right: 0px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+.cache8 {
+  width: 500px;
+  background-color: blue;
+  overflow: hidden;
+  display: flex;
+}
+
+.card-argu8 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+.card-argu8__texte-argu8 {
+  background-color: green;
+  width: 500px;
+  margin-right: 0px;
+}
+.card-argu8__texte-argu8 h4, .card-argu8__texte-argu8 p {
+  text-overflow: string;
+}
+.card-argu8__check-argu8 {
+  position: relative;
+  padding: 20px;
+  text-overflow: clip;
+  width: 80px;
+  background-color: blueviolet;
+  display: none;
+}
+
+.cache9 {
+  width: 580px;
+  background-color: blue;
+  overflow: hidden;
+  display: flex;
+}
+
+.card-argu9 {
+  background-color: red;
+  padding: 12px;
+  height: 100px;
+  display: flex;
+}
+.card-argu9__texte-argu9 {
+  background-color: green;
+  width: 100%;
+  margin-right: 0px;
+}
+.card-argu9__texte-argu9 h4, .card-argu9__texte-argu9 p {
+  text-overflow: string;
+}
+.card-argu9__check-argu9 {
+  /*position: relative;*/
+  padding: 20px;
+  text-overflow: clip;
+  width: 80px;
+  background-color: blueviolet;
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

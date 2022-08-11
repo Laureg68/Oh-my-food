@@ -12,6 +12,9 @@ $anim-delay: calc($anim-dur / $num-bars); /*$anim-dur / $num-bars; deprecated */
     0% {
         scaleY: 100%;
     }
+    50% {
+        opacity: 90%;
+    }
     99% {
         opacity: 90%;
         scaleY: 100%;
@@ -31,19 +34,18 @@ $anim-delay: calc($anim-dur / $num-bars); /*$anim-dur / $num-bars; deprecated */
         transform: scaleY(1.0);
     }
 }
-
 .anim-intro {
     transform-origin: 0% 0%;
     position: absolute; 
     top: 0px; 
     padding-top: 204px;
     z-index: 10; 
-    background-color: #fff;
+    background-color: rgba(255, 255, 255);
     opacity: 1;
     width: 100%; 
-    height: 3000px;
+    height: 100%;
     scaleY: 100%;
-    animation: anim 2000ms ease-out forwards;
+    animation: anim 10000ms ease-out forwards;
     .load {
         margin: auto;        
         width: 120px;
