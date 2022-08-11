@@ -179,17 +179,18 @@ a {
             justify-content: space-between;*/
             height: 70px;
             width:100%;
-            /*transition-duration: 500ms;*/
+            transition-duration: 500ms;
             display: flex;
             justify-content: space-between;
             h4 {
-                font-size: 18px;
+                /*font-size: 18px;
                 font-weight: bold;
                 margin-top: 0px;
                 margin-bottom: 5px;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                text-overflow: ellipsis;*/ 
+                @include card-h4;
             }
             p {
                 margin: 0px;
@@ -221,11 +222,9 @@ a {
                          
             }
             &:hover {
-                /*background: red;*/
                 width: 80%
             }
             &:hover + .card-check {
-                /*background: green;*/
                 width: 20%;
                 p {
                     font-size: 20px;
@@ -235,7 +234,45 @@ a {
                 }                
                 
             }
+            
         }
+        
+        &__argu-resto {
+            /*background-color: red;*/
+            height: 70px;
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            .texte-resto {
+                padding: 12px;
+                h4 {
+                    @include card-h4;
+                }
+                p {
+                    margin: 0px;
+                }
+            }
+            .bloc-like {
+                /*background-color: aqua;*/
+                width: 60px;
+                display: flex;
+                padding: 20px 0px 0px 20px;
+                &:hover {
+                    .btn-like1 {
+                        opacity: 1;
+                    }
+                    .btn-like2 {
+                        opacity: 0;
+                    }
+                }
+                
+            
+            }
+            
+            
+        }
+        
+    
         .card-check {
             background-color: aquamarine;
             position: absolute;

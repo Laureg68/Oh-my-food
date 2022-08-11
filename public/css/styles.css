@@ -219,6 +219,13 @@ a {
   justify-content: space-between;
 }
 .card__argu h4 {
+  /*font-size: 18px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;*/
   font-size: 18px;
   font-weight: bold;
   margin-top: 0px;
@@ -256,11 +263,9 @@ a {
   text-align: right;
 }
 .card__argu:hover {
-  /*background: red;*/
   width: 80%;
 }
 .card__argu:hover + .card-check {
-  /*background: green;*/
   width: 20%;
 }
 .card__argu:hover + .card-check p {
@@ -268,6 +273,40 @@ a {
   color: #fff;
   transform: rotate(360deg);
   transition-duration: 500ms;
+}
+.card__argu-resto {
+  /*background-color: red;*/
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card__argu-resto .texte-resto {
+  padding: 12px;
+}
+.card__argu-resto .texte-resto h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__argu-resto .texte-resto p {
+  margin: 0px;
+}
+.card__argu-resto .bloc-like {
+  /*background-color: aqua;*/
+  width: 60px;
+  display: flex;
+  padding: 20px 0px 0px 20px;
+}
+.card__argu-resto .bloc-like:hover .btn-like1 {
+  opacity: 1;
+}
+.card__argu-resto .bloc-like:hover .btn-like2 {
+  opacity: 0;
 }
 .card .card-check {
   background-color: aquamarine;
@@ -294,25 +333,25 @@ a {
 .groupe-plats div:first-of-type {
   /*background-color: red;*/
   animation-duration: 2000ms;
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
 
 .groupe-plats div:nth-of-type(2) {
   /*background-color: blue;*/
   animation-duration: 2000ms;
-  animation-delay: 1500ms;
+  animation-delay: 1000ms;
 }
 
 .groupe-plats div:nth-of-type(3) {
   /*background-color: green;*/
   animation-duration: 2000ms;
-  animation-delay: 2000ms;
+  animation-delay: 1500ms;
 }
 
 .groupe-plats div:nth-of-type(4) {
   /*background-color: green;*/
   animation-duration: 2000ms;
-  animation-delay: 2500ms;
+  animation-delay: 2000ms;
 }
 
 .btn-supo {
@@ -350,6 +389,32 @@ a {
   background: linear-gradient(to right, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.btn-like1 {
+  font-size: 24px;
+  margin: 0px;
+  /*position: relative;
+  top : 22px;
+  left : 25px;*/
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 2000ms;
+}
+
+.btn-like2 {
+  font-size: 24px;
+  margin: 0px;
+  position: relative;
+  top: 0px;
+  left: -23px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-delay: 500ms;
 }
 
 .head-page {

@@ -15,3 +15,13 @@
 @mixin ombre-boite-sombre($color: $gris-ombre) {
     box-shadow: 0px 5px 5px darken($color, 20%);
 }
+
+@mixin card-h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
