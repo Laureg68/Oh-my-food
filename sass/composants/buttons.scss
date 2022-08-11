@@ -39,3 +39,30 @@
         -webkit-background-clip: text;
     }
 }
+
+.btn-like1 {
+    font-size: 24px;
+    margin: 0px;
+    /*position: relative;
+    top : 22px;
+    left : 25px;*/
+    
+    background: linear-gradient(to right, $secondary-color, $primary-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2000ms;
+}
+.btn-like2 {
+    font-size: 24px;
+    margin: 0px;
+    position: relative;
+    
+    top : 0px;
+    left : -23px;
+    opacity: 1; 
+    transition-property: opacity;
+    transition-duration: 300ms;  
+    transition-delay: 500ms;
+}
