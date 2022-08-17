@@ -17,8 +17,7 @@
         }
     }
 }
-.reservez {
-    
+.reservez {  
     .reservez-titre {
         text-align: center;
         font-weight: bold;
@@ -31,9 +30,6 @@
         font-size: 18px;
         margin-bottom: 25px;
     }
-}
-.fonctionnement {
-    
 }
 .item-fonctionnement {
     background-color: $gris-fond2;
@@ -61,8 +57,7 @@
         }
     }
     .text-fonctionnmt {
-        display: flex;
-        
+        display: flex;    
         a {
             color: #000;
             font-weight: bold;
@@ -81,7 +76,6 @@
         }
     }
 }
-
 .sections {
     background-color: #fff;
     padding: 30px 20px;

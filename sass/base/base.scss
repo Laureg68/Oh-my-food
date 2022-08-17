@@ -90,22 +90,9 @@ a {
                 }
                          
             }
-            &:hover {
-                width: 80%
-            }
-            &:hover + .card-check {
-                width: 20%;
-                p {
-                    font-size: 20px;
-                    color: #fff;
-                    transform: rotate(360deg);
-                    transition-duration: 500ms;                    
-                }                
-                
-            }
             
-        }
-        
+            
+        }        
         &__argu-resto {
             height: 70px;
             width:100%;
@@ -120,27 +107,9 @@ a {
                     margin: 0px;
                 }
             }
-            /*.bloc-like {
-                
-                width: 60px;
-                display: flex;
-                padding: 20px 0px 0px 20px;
-                &:hover {
-                    .btn-like1 {
-                        opacity: 1;
-                    }
-                    .btn-like2 {
-                        opacity: 0;
-                    }
-                }
-                
-            
-            }*/
             
             
         }
-        
-    
         .card-check {
             background-color: aquamarine;
             position: absolute;
@@ -163,7 +132,22 @@ a {
             animation-name: intro-plat;
             animation-fill-mode: forwards;
         }
-        
+        &:hover {
+            
+            .card__argu--hover {
+                width: 80%;
+            }
+            .card-check {
+                width: 20%;
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                    transform: rotate(360deg);
+                    transition-duration: 500ms;                    
+                }     
+            }         
+                
+        }    
     }
     .bloc-like {
                 
@@ -181,6 +165,7 @@ a {
         
     
     }
+
 
 .groupe-plats div:first-of-type {
     /*background-color: red;*/

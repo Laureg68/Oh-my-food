@@ -65,7 +65,7 @@
   background-color: #0E397F;
 }
 .load__bar--1-vart {
-  animation-delay: 1505ms;
+  animation-delay: 575ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -82,7 +82,7 @@
   background-color: #0E397F;
 }
 .load__bar--2-vart {
-  animation-delay: 820ms;
+  animation-delay: 1285ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -99,7 +99,7 @@
   background-color: #0E397F;
 }
 .load__bar--3-vart {
-  animation-delay: 1365ms;
+  animation-delay: 1845ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -116,7 +116,7 @@
   background-color: #0E397F;
 }
 .load__bar--4-vart {
-  animation-delay: 1715ms;
+  animation-delay: 1670ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -133,7 +133,7 @@
   background-color: #0E397F;
 }
 .load__bar--5-vart {
-  animation-delay: 1180ms;
+  animation-delay: 1900ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -173,7 +173,6 @@ h2 {
 .menu-etabl h3 {
   text-transform: uppercase;
   margin: 35px 0px 5px 0px;
-  /*border-bottom: 1px solid $tertiary-color;*/
 }
 
 .flex {
@@ -273,39 +272,11 @@ a {
   font-weight: bold;
   text-align: right;
 }
-.card__argu:hover {
-  width: 80%;
-}
-.card__argu:hover + .card-check {
-  width: 20%;
-}
-.card__argu:hover + .card-check p {
-  font-size: 20px;
-  color: #fff;
-  transform: rotate(360deg);
-  transition-duration: 500ms;
-}
 .card__argu-resto {
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /*.bloc-like {
-
-      width: 60px;
-      display: flex;
-      padding: 20px 0px 0px 20px;
-      &:hover {
-          .btn-like1 {
-              opacity: 1;
-          }
-          .btn-like2 {
-              opacity: 0;
-          }
-      }
-
-
-  }*/
 }
 .card__argu-resto .texte-resto {
   padding: 12px;
@@ -342,6 +313,18 @@ a {
   opacity: 0;
   animation-name: intro-plat;
   animation-fill-mode: forwards;
+}
+.card:hover .card__argu--hover {
+  width: 80%;
+}
+.card:hover .card-check {
+  width: 20%;
+}
+.card:hover .card-check p {
+  font-size: 20px;
+  color: #fff;
+  transform: rotate(360deg);
+  transition-duration: 500ms;
 }
 
 .bloc-like {
@@ -444,7 +427,6 @@ a {
   position: relative;
   z-index: 20;
   height: 40px;
-  /*justify-content: space-between;*/
   box-shadow: 0px 5px 5px #bbbaba;
   padding-top: 20px;
   overflow: hidden;
@@ -456,13 +438,6 @@ a {
   box-shadow: none;
 }
 
-/*.nav-head-left {
-    margin-left: 20px;
-}
-.nav-head-right {
-    margin-right: 20px;
-}
-*/
 .nav {
   position: relative;
   top: -40px;
