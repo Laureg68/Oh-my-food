@@ -65,7 +65,7 @@
   background-color: #0E397F;
 }
 .load__bar--1-vart {
-  animation-delay: 575ms;
+  animation-delay: 230ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -82,7 +82,7 @@
   background-color: #0E397F;
 }
 .load__bar--2-vart {
-  animation-delay: 1285ms;
+  animation-delay: 1900ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -99,7 +99,7 @@
   background-color: #0E397F;
 }
 .load__bar--3-vart {
-  animation-delay: 1845ms;
+  animation-delay: 1500ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -116,7 +116,7 @@
   background-color: #0E397F;
 }
 .load__bar--4-vart {
-  animation-delay: 1670ms;
+  animation-delay: 1985ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -133,7 +133,7 @@
   background-color: #0E397F;
 }
 .load__bar--5-vart {
-  animation-delay: 1900ms;
+  animation-delay: 1795ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -339,6 +339,35 @@ a {
   opacity: 0;
 }
 
+.groupe-plats {
+  /*background-color: red;*/
+}
+@media only screen and (min-width: 768px) {
+  .groupe-plats {
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .groupe-plats .card {
+    /*background-color: #bef7cb; */
+    width: 49%;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .groupe-plats {
+    /*background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .groupe-plats .card {
+    /*background-color: #bef4f7;*/
+    width: 32%;
+    margin-bottom: 0px;
+  }
+}
+
 .groupe-plats div:first-of-type {
   /*background-color: red;*/
   animation-duration: 2000ms;
@@ -533,6 +562,54 @@ a {
 }
 .sections--gris {
   background-color: #f6f6f6;
+}
+
+.liste-fonction {
+  /*background-color: aqua; */
+}
+@media only screen and (min-width: 768px) {
+  .liste-fonction {
+    /*background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .liste-fonction .item-fonctionnement {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .liste-fonction {
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .liste-fonction .item-fonctionnement {
+    width: 29%;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .liste-restos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .liste-restos .card {
+    width: 49%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .liste-restos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .liste-restos .card {
+    width: 24%;
+  }
 }
 
 .visuel-tete {
