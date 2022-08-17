@@ -83,3 +83,43 @@
         background-color: $gris-fond2;
     }
 }
+.liste-fonction {
+    /*background-color: aqua; */
+    @media only screen and (min-width: 768px) {
+        /*background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-fonctionnement {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        /* background-color: green; */
+        display: flex;
+        justify-content: space-between;
+        .item-fonctionnement {
+            width: 29%;
+            margin-bottom: 0px;
+        }
+    }
+}
+.liste-restos {    
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card {
+            width: 49%;
+            margin-bottom: 10px;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        .card {
+            width: 24%;
+        }
+    }
+}
