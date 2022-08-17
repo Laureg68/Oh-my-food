@@ -65,7 +65,7 @@
   background-color: #0E397F;
 }
 .load__bar--1-vart {
-  animation-delay: 575ms;
+  animation-delay: 470ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -82,7 +82,7 @@
   background-color: #0E397F;
 }
 .load__bar--2-vart {
-  animation-delay: 1285ms;
+  animation-delay: 1645ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -99,7 +99,7 @@
   background-color: #0E397F;
 }
 .load__bar--3-vart {
-  animation-delay: 1845ms;
+  animation-delay: 885ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -116,7 +116,7 @@
   background-color: #0E397F;
 }
 .load__bar--4-vart {
-  animation-delay: 1670ms;
+  animation-delay: 1265ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
@@ -133,7 +133,7 @@
   background-color: #0E397F;
 }
 .load__bar--5-vart {
-  animation-delay: 1900ms;
+  animation-delay: 1705ms;
   animation-direction: alternate-reverse;
   /*animation-fill-mode: forwards;*/
   background-color: #0E397F;
