@@ -1,0 +1,125 @@
+$cd-billes: #0E397F;
+$dim-boule: 102px;
+$dim-bille: calc($dim-boule/5);
+$delay-bille: 100ms;
+
+@keyframes intro {
+    0% {
+        scaleY: 100%;
+    }
+    50% {
+        opacity: 90%;
+    }
+    99% {
+        opacity: 90%;
+        scaleY: 100%;
+        
+    }
+    100% {
+        opacity: 0%;
+        scaleY: 0%;
+        z-index: -10;
+    }
+}
+.anim-loader {
+    transform-origin: 0% 0%;
+    position: absolute; 
+    z-index: 20;
+    top: 0px; 
+    padding-top: 204px;
+    z-index: 10; 
+    background-color: rgba(255, 255, 255);
+    opacity: 1;
+    width: 100%; 
+    height: 100%;
+    /*scaleY: 100%;*/
+    animation: intro 15000ms ease-out forwards;
+}
+.flex {
+    display: flex;
+}
+@keyframes anim-bille {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes anim-boule {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.boule {
+    width: $dim-boule;
+    height: $dim-boule;
+    padding: 4px;
+    /*background-color: $cd-boule;*/
+    border-radius: $dim-boule + 1;
+    border: 1px solid #0E397F;
+    scale: 150%;
+    margin: auto;
+    animation: anim-boule 1400ms /*backwards*/ forwards infinite /*ease-in-out*/ linear /*alternate*/;
+    .bille {
+        position: relative;
+        width: $dim-bille;
+        height: $dim-bille;
+        border-radius: $dim-bille;
+        background-color: #0E397F;
+        animation: anim-bille 1000ms backwards infinite ease-in-out alternate;
+    }
+    .bille0 {
+        top: 0px; 
+        left: 41px;
+    }
+    .cont-bille2 {
+        position: relative;
+        top: -8px;
+    }
+    .bille1 {
+        top: 0px; 
+        left: 12px;
+        animation-delay: $delay-bille * 7;
+    }
+    .bille2 {
+        top: 0px; 
+        left: 48px;
+        animation-delay: $delay-bille;
+    }
+    .bille3 {
+        top: 0px; 
+        left: 0px;
+        animation-delay: $delay-bille * 6;
+    }
+    .bille4 {
+        top: 0px; 
+        left: 60px;
+        animation-delay: $delay-bille * 2;
+    }
+    
+    .cont-bille4 {
+        position: relative;
+        top: 08px;
+    }
+    .bille5 {
+        top: 0px; 
+        left: 12px;
+        animation-delay: $delay-bille * 5;
+    }
+    .bille6 {
+        top: 0px; 
+        left: 48px;
+        animation-delay: $delay-bille * 3;
+    }
+    .bille7 {
+        top: 0px; 
+        left: 41px;
+        animation-delay: $delay-bille * 4;
+    }
+    
+}

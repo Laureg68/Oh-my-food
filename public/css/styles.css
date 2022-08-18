@@ -1,5 +1,4 @@
-/*$anim-dur / $num-bars; deprecated */
-@keyframes anim {
+@keyframes intro {
   0% {
     scaleY: 100%;
   }
@@ -16,17 +15,10 @@
     z-index: -10;
   }
 }
-@keyframes bars {
-  0% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-.anim-intro {
+.anim-loader {
   transform-origin: 0% 0%;
   position: absolute;
+  z-index: 20;
   top: 0px;
   padding-top: 204px;
   z-index: 10;
@@ -34,112 +26,95 @@
   opacity: 1;
   width: 100%;
   height: 100%;
-  scaleY: 100%;
-  animation: anim 10000ms ease-out forwards;
-}
-.anim-intro .load {
-  margin: auto;
-  width: 120px;
+  /*scaleY: 100%;*/
+  animation: intro 15000ms ease-out forwards;
 }
 
-.load {
-  width: 160px;
-  height: 120px;
+.flex {
   display: flex;
-  justify-content: space-between;
 }
-.load__bar {
-  background-color: #15DEA5;
-  height: 100%;
-  width: 16px;
-  animation: bars 1000ms backwards infinite ease-in-out alternate;
-  /*timing-function: ease-in-out;*/
-  /*animation-direction: alternate; (>>> normal reverse alternate) */
+
+@keyframes anim-bille {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-.load__bar--1 {
-  animation-delay: 200ms;
+@keyframes anim-boule {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
-.load__bar--1-inv {
-  animation-delay: 200ms;
-  animation-direction: alternate-reverse;
+.boule {
+  width: 102px;
+  height: 102px;
+  padding: 4px;
+  /*background-color: $cd-boule;*/
+  border-radius: 103px;
+  border: 1px solid #0E397F;
+  scale: 150%;
+  margin: auto;
+  animation: anim-boule 1400ms forwards infinite linear;
+}
+.boule .bille {
+  position: relative;
+  width: 20.4px;
+  height: 20.4px;
+  border-radius: 20.4px;
   background-color: #0E397F;
+  animation: anim-bille 1000ms backwards infinite ease-in-out alternate;
 }
-.load__bar--1-vart {
-  animation-delay: 575ms;
-  animation-direction: alternate-reverse;
-  /*animation-fill-mode: forwards;*/
-  background-color: #0E397F;
+.boule .bille0 {
+  top: 0px;
+  left: 41px;
 }
-.load__bar--1-vart:hover {
-  animation-play-state: paused;
+.boule .cont-bille2 {
+  position: relative;
+  top: -8px;
 }
-.load__bar--2 {
-  animation-delay: 400ms;
+.boule .bille1 {
+  top: 0px;
+  left: 12px;
+  animation-delay: 700ms;
 }
-.load__bar--2-inv {
-  animation-delay: 400ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
+.boule .bille2 {
+  top: 0px;
+  left: 48px;
+  animation-delay: 100ms;
 }
-.load__bar--2-vart {
-  animation-delay: 1285ms;
-  animation-direction: alternate-reverse;
-  /*animation-fill-mode: forwards;*/
-  background-color: #0E397F;
-}
-.load__bar--2-vart:hover {
-  animation-play-state: paused;
-}
-.load__bar--3 {
+.boule .bille3 {
+  top: 0px;
+  left: 0px;
   animation-delay: 600ms;
 }
-.load__bar--3-inv {
-  animation-delay: 600ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
+.boule .bille4 {
+  top: 0px;
+  left: 60px;
+  animation-delay: 200ms;
 }
-.load__bar--3-vart {
-  animation-delay: 1845ms;
-  animation-direction: alternate-reverse;
-  /*animation-fill-mode: forwards;*/
-  background-color: #0E397F;
+.boule .cont-bille4 {
+  position: relative;
+  top: 8px;
 }
-.load__bar--3-vart:hover {
-  animation-play-state: paused;
+.boule .bille5 {
+  top: 0px;
+  left: 12px;
+  animation-delay: 500ms;
 }
-.load__bar--4 {
-  animation-delay: 800ms;
+.boule .bille6 {
+  top: 0px;
+  left: 48px;
+  animation-delay: 300ms;
 }
-.load__bar--4-inv {
-  animation-delay: 800ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
-}
-.load__bar--4-vart {
-  animation-delay: 1670ms;
-  animation-direction: alternate-reverse;
-  /*animation-fill-mode: forwards;*/
-  background-color: #0E397F;
-}
-.load__bar--4-vart:hover {
-  animation-play-state: paused;
-}
-.load__bar--5 {
-  animation-delay: 1000ms;
-}
-.load__bar--5-inv {
-  animation-delay: 1000ms;
-  animation-direction: alternate-reverse;
-  background-color: #0E397F;
-}
-.load__bar--5-vart {
-  animation-delay: 1900ms;
-  animation-direction: alternate-reverse;
-  /*animation-fill-mode: forwards;*/
-  background-color: #0E397F;
-}
-.load__bar--5-vart:hover {
-  animation-play-state: paused;
+.boule .bille7 {
+  top: 0px;
+  left: 41px;
+  animation-delay: 400ms;
 }
 
 @keyframes intro-plat {
@@ -678,5 +653,10 @@ footer ul li p {
 footer ul li a {
   color: #fff;
 }
+
+/*
+@import "./base/test-card.scss";
+@import "./base/test.scss";
+*/
 
 /*# sourceMappingURL=styles.css.map */
