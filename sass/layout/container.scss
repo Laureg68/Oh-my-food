@@ -1,3 +1,4 @@
+/*Container */ 
 .localize {
     height: 46px;
     background-color: #eaeaea; 
@@ -84,9 +85,7 @@
     }
 }
 .liste-fonction {
-    /*background-color: aqua; */
     @media only screen and (min-width: 768px) {
-        /*background-color: red; */
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -96,7 +95,6 @@
         }
     }
     @media only screen and (min-width: 992px) {
-        /* background-color: green; */
         display: flex;
         justify-content: space-between;
         .item-fonctionnement {
