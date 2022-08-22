@@ -13,6 +13,7 @@ $delay-bille: 100ms;
     opacity: 1;
     width: 100%; 
     height: 100%;
+    overflow: hidden;
     animation: intro 3000ms ease-out forwards;
 }
 .flex {
