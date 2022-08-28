@@ -43,6 +43,31 @@
     opacity: 1;
   }
 }
+/*Typography */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+.menu-etabl h3 {
+  text-transform: uppercase;
+  margin: 35px 0px 5px 0px;
+}
+
 /*Anim loader */
 .anim-loader {
   transform-origin: 0% 0%;
@@ -127,30 +152,6 @@
   top: 0px;
   left: 41px;
   animation-delay: 400ms;
-}
-
-/*Typography */
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-p {
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 28px;
-  font-family: "Shrikhand", cursive;
-  letter-spacing: 1px;
-}
-
-h2 {
-  font-weight: 800;
-}
-
-.menu-etabl h3 {
-  text-transform: uppercase;
-  margin: 35px 0px 5px 0px;
 }
 
 /*Header */
