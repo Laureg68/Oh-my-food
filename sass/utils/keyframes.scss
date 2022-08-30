@@ -1,17 +1,17 @@
 @keyframes intro {
     0% {
-        scaleY: 100%;
+        transform: scaleY(100%);
     }
     97% {
         opacity: 97%;
-        scaleY: 100%;  
+        transform: scaleY(100%);  
     }
     99% {
         z-index: 20;
     }
     100% {
         opacity: 0%;
-        scaleY: 0%;
+        transform: scaleY(0%);
         z-index: -10;
     }
 }
@@ -25,10 +25,10 @@
 }
 @keyframes anim-boule {
     0% {
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     100% {
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
 @keyframes intro-plat {
