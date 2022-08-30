@@ -25,7 +25,7 @@ $delay-bille: 100ms;
     padding: 4px;
     border-radius: $dim-boule + 1;
     border: 1px solid $secondary-color;
-    scale: 150%;
+    transform: scale(1.5);
     margin: auto;
     animation: anim-boule 1400ms forwards infinite linear;
     .bille {
